@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Developer Portfolio - Mikhail Kovalevskiy</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Engineering Reliable Embedded Solutions</h1>
+        <p>Crafting high-performance software for embedded systems in critical applications.</p>
+        <a href="#projects" class="cta">Explore My Projects</a>
+        <a href="#contact" class="cta">Contact Me</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Mikhail Kovalevskiy, CEO and founder of <a href="https://morze.tech">Morze Technologies LLC</a>. With expertise in embedded systems and a strong technical background, I develop firmware for complex applications, including medical and space devices.</p>
+        <img src="static/images/mkovalevski.jpg" alt="Profile picture of Mikhail Kovalevskiy">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills and Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Programming Languages</h3>
+                <p>C, C++, Python, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <h3>Embedded Systems</h3>
+                <ul>
+                    <li>RTOS: FreeRTOS & no RTOS (bare-metal programming)</li>
+                    <li>Protocols and Interfaces: SPI, I2C, Quad SPI, CAN, FDCAN, TCP/IP (lwip), USB (ST) and etc</li>
+                    <li>Bootloader development for remote server and USB MS updates</li>
+                    <li>Graphics Libraries (proprietary and TouchGFX) for user interfaces on various displays</li>
+                    <li>Touch display and driver development</li>
+                    <li>File System: FatFs</li>
+                    <li>Network Stack: LWIP</li>
+                    <li>Web interfaces for microcontroller interaction using Flask and Node.js backend</li>
+                    <li>Custom Linux images with Yocto for embedded systems</li>
+                    <li>Applications in QT for embedded Linux, including USB data exchange and control (libusb)</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3>Project Management</h3>
+                <p>Team leadership, project and budget management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware">
+        <h2>Hardware Expertise</h2>
+        <p>My experience spans a variety of architectures, processors, and microcontrollers used in embedded systems:</p>
+        <ul>
+            <li>ARM architecture (Cortex-M0, M4, M7, A72)</li>
+            <li>Microcontrollers and processors: STM32, ESP32, RK3399</li>
+            <li>Development Boards: Khadas, RockPi, Raspberry Pi</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects/Portfolio</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3><a href="https://efamedica.ru/catalog/products/" target="_blank">Surgical Device Firmware</a></h3>
+                <p>Firmware development for surgical devices, utilizing advanced protocols and interfaces:</p>
+                <ul>
+                    <li>Technologies and Protocols: CAN, FDCAN, SPI, QSPI, I2C, Ethernet, USB, LTDC, DMA, and DMA2D</li>
+                    <li>Network: TCP/IP and UDP using LWIP library</li>
+                    <li>File System: FatFS</li>
+                    <li>User Interfaces: TouchGFX for TFT displays</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3><a href="http://www.imbp.ru/" target="_blank">ISS Project</a></h3>
+                <p>Created software for space-grade devices installed on the International Space Station for Institute of Biomedical Problems of the Russian Academy of Sciences (IBMP RAS).</p>
+            </div>
+            <div class="project-item">
+                <h3><a href="https://r-ed.world/" target="_blank">Educational Programming Software</a></h3>
+                <p>Built a visual programming app for kids using STM32 and Arduino boards based on the open-source Scratch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Science in Nanotechnologies</p>
+        <p>Saint Petersburg Electrotechnical University "LETI", Faculty of Electronics, Saint Petersburg</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog & Resources</h2>
+        <p>Check out my <a href="https://t.me/embeddedC">Telegram channel</a> for insights on embedded development and technology trends.</p>
+    </section>
+
+    <section id="videos">
+        <h2>My Videos</h2>
+        <p>Watch some of my latest tutorials and project showcases on embedded systems and programming.</p>
+        <div class="video-grid">
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WX4imUBfBAE" frameborder="0" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/video/WX4imUBfBAE">Who is an Embedded Developer?</a>
+            </div>
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TviM-_qUgaM" frameborder="0" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/video/TviM-_qUgaM">Methods and principles of software development for embedded devices</a>
+            </div>
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sE-4YNcGQDY" frameborder="0" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/video/sE-4YNcGQDY">Creating an online store for a chatbot using the Morze Assistant platform</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mikhail Kovalevskiy | <a href="https://www.linkedin.com/in/mikhail-kovalevskiy-209434204">LinkedIn</a> | <a href="https://t.me/embeddedC">Telegram</a></p>
+    </footer>
+
+</body>
+</html>
