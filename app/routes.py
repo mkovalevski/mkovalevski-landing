@@ -16,9 +16,9 @@ def home():
 
 @main.route("/submit_form", methods=["POST"])
 def submit_form():
-    name = request.form.get("name")
-    email = request.form.get("email")
-    message = request.form.get("message")
+    name = request.form.get("name").encode('utf-8')
+    email = request.form.get("email").encode('utf-8')
+    message = request.form.get("message").encode('utf-8')
     send_email(name, email, message)
     return redirect(url_for("main.home"))
 

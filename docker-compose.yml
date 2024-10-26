@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  app:
+    command: python run.py
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 0.0.0.0:5000:5000
+    environment:
+      EMAIL_USER:
+      EMAIL_PASS:
+      EMAIL_RECEIVER:
+      SECRET_KEY:
